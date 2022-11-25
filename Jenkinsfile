@@ -4,15 +4,15 @@ pipeline{
 
     stages{
 
-        stage ('Cloning our git'){
+        // stage ('Cloning our git'){
 
-          steps{
+        //   steps{
 
-             git 'https://github.com/Yamato8163/INSPECTION-a_messaging_app.git'
+        //      git 'https://github.com/Yamato8163/INSPECTION-a_messaging_app.git'
 
-          }
+        //   }
 
-        }
+        // }
 
         stage ('Building our image'){
 
