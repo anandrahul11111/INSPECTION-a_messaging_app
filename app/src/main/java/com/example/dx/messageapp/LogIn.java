@@ -27,7 +27,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class LogIn extends AppCompatActivity {
 
-    private EditText logmail,logpassword;
+    private EditText logmail;
+    private EditText logpassword;
     private FirebaseAuth mAuth;
     private DatabaseReference mdata;
     private ProgressDialog progressDialog;
@@ -46,7 +47,7 @@ public class LogIn extends AppCompatActivity {
 
     public void userlog(View view){
         progressDialog.setMessage("Logging In.....");
-        final String email,userpassword;
+         String email,userpassword;
         email=logmail.getText().toString().trim();
         userpassword=logpassword.getText().toString().trim();
         if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(userpassword)){
@@ -86,4 +87,7 @@ public class LogIn extends AppCompatActivity {
     public void sign(View view){
         startActivity(new Intent(getApplicationContext(),Registration.class));
     }
+
+    int x;
+    int y;
 }
